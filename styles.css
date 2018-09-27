@@ -1,14 +1,16 @@
 .blue-area {
-   padding-top: 41px;
-   height: 295px;
+   padding-top: 40px;
+   min-height: 295px;
    color: white;
    background-color: #7971ea;
    margin-bottom: -80px;
+   padding-bottom: 80px;
    line-height: 150%;
-   /* text-align: center; */
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
    box-sizing: border-box;
 }
 
@@ -47,96 +49,121 @@ body {
 
 
 .blue-area h1 {
-    font-weight: 400;
+   font-weight: 400;
 }
 
 .blue-area p {
-    opacity: 0.85;
-    font-size: 0.85rem;
-    font-weight: 300;
+   opacity: 0.85;
+   font-size: 0.85rem;
+   font-weight: 300;
 }
 
 .blue-area h3 {
-    font-weight: 400;
+   font-weight: 400;
 }
 
 .titulo {
-    color: #7971EA;
-    margin: 8px 0;
-    font-weight: 500;
+   color: #7971EA;
+   margin: 8px 0;
+   font-weight: 500;
 }
 
 .pergunta {
-    color: #3e4e88;
-    margin: 5px 0;
-    opacity: 0.95;
+   color: #3e4e88;
+   margin: 5px 0;
+   opacity: 0.95;
 }
 
 .resposta {
-    margin-bottom: 15px;
-    font-size: 13.25px;
-    margin-left: 5px;
+   margin-bottom: 15px;
+   font-size: 13.25px;
+   margin-left: 5px;
 }
 
 ul {
-    margin: 0;
-    margin-top: 5px;
+   margin: 0;
+   margin-top: 5px;
 }
 
 .resposta p {
-    margin: 0;
+   margin: 0;
 }
 
 
 .big {
-    font-size: 1.15rem;
-    color: #757575;
-    font-weight: 500;
+   font-size: 1.15rem;
+   color: #757575;
+   font-weight: 500;
 }
 
 .salario {
-    margin-bottom: 20px;
-    border-radius: 1000px;
-    padding: 3px 12px;
-    display: inline-block;
-    border: solid 1px #959595;
-    color: #757575;
-    font-size: 11.5px;
+   margin-bottom: 20px;
+   border-radius: 1000px;
+   padding: 3px 12px;
+   display: inline-block;
+   border: solid 1px #959595;
+   color: #757575;
+   font-size: 11.5px;
 }
 
 .extra {
-    display: inline-block;
-    width: 33%;
-    vertical-align: top;
-    margin-top: 100px;
-    padding-left: 35px;
-    text-align: justify;
-    text-align-last: right;
-    -moz-text-align-last: right;
+   display: inline-block;
+   width: 33%;
+   vertical-align: top;
+   margin-top: 100px;
+   padding-left: 35px;
+   text-align: justify;
+   text-align-last: right;
+   -moz-text-align-last: right;
 }
 
 .extra p {
-    margin-bottom: 20px;
-    font-size: 13.25px;
+   margin-bottom: 20px;
+   font-size: 13.25px;
 }
 
 .email-area {
-    padding: 13px 16px;
-    border: dashed 3px #7971EA;
-    border-radius: 20px;
-    text-align: center !important;
-    text-align-last: auto;
+   padding: 13px 16px;
+   border: dashed 3px #7971EA;
+   border-radius: 20px;
+   text-align: center !important;
+   text-align-last: auto;
 }
 
 .email-area .call {
-    color: #7971EA;
-    font-size: 1rem;
-    font-weight: 500;
+   color: #7971EA;
+   font-size: 1rem;
+   font-weight: 500;
 }
 
 .email {
-    margin: 8px 0;
-    color: #757575;
-    font-size: 1rem;
-    font-weight: 500;
+   margin: 8px 0;
+   color: #757575;
+   font-size: 1rem;
+   font-weight: 500;
+}
+
+@media only screen and (max-width: 980px) {
+   .vagas-container {
+      width: 100%;
+   }
+   .extra {
+      text-align: left;
+      text-align-last: auto;
+      width: 100%;
+      margin-top: 0;
+   }
+}
+
+@media only screen and (max-width: 750px) {
+   .vagas-container {
+      width: 100%;
+   }
+   .extra {
+      width: 100%;
+      margin-top: 0;
+   }
+   .vaga {
+      width: calc(100% - 15px);
+   }
 }
